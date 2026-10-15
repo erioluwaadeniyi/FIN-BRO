@@ -1,0 +1,271 @@
+
+/* FINBRO Add Transaction */
+
+.add-transaction-panel,
+.add-transaction-panel * {
+  box-sizing: border-box;
+}
+
+.add-transaction-panel {
+  width: 100%;
+  min-width: 0;
+  padding: 23px;
+  background: #ffffff;
+  border: 1px solid #e8edf2;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(26, 43, 63, 0.025);
+}
+
+.add-transaction__header {
+  margin-bottom: 22px;
+}
+
+.add-transaction__eyebrow {
+  display: block;
+  margin-bottom: 9px;
+  color: #087f6e;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.add-transaction__header h3 {
+  margin: 0;
+  color: #233346;
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.add-transaction__header p {
+  margin: 7px 0 0;
+  color: #97a1ad;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.add-transaction__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.add-transaction__type-selector {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.add-transaction__type-selector legend,
+.add-transaction__field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #435264;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.add-transaction__type-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.add-transaction__type-button {
+  min-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px;
+  color: #758292;
+  background: #ffffff;
+  border: 1px solid #e5ebef;
+  border-radius: 9px;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 650;
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.add-transaction__type-button--active-expense {
+  color: #bf6845;
+  background: #fff4ee;
+  border-color: #efc4b0;
+}
+
+.add-transaction__type-button--active-income {
+  color: #087f6e;
+  background: #edf8f4;
+  border-color: #afdccc;
+}
+
+.add-transaction__type-button:focus-visible,
+.add-transaction__submit:focus-visible,
+.add-transaction__cancel:focus-visible {
+  outline: 2px solid #087f6e;
+  outline-offset: 3px;
+}
+
+.add-transaction__field {
+  min-width: 0;
+}
+
+.add-transaction__field input,
+.add-transaction__field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 11px 12px;
+  color: #263649;
+  background: #ffffff;
+  border: 1px solid #e2e8ed;
+  border-radius: 9px;
+  outline: none;
+  font: inherit;
+  font-size: 12px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.add-transaction__field input::placeholder {
+  color: #a5afb9;
+}
+
+.add-transaction__field input:focus,
+.add-transaction__field select:focus {
+  border-color: #58a99b;
+  box-shadow: 0 0 0 3px rgba(8, 127, 110, 0.08);
+}
+
+.add-transaction__amount-input {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #e2e8ed;
+  border-radius: 9px;
+}
+
+.add-transaction__amount-input:focus-within {
+  border-color: #58a99b;
+  box-shadow: 0 0 0 3px rgba(8, 127, 110, 0.08);
+}
+
+.add-transaction__amount-input > span {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  color: #758292;
+  background: #f8fafb;
+  border-right: 1px solid #e2e8ed;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.add-transaction__amount-input input {
+  min-width: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.add-transaction__amount-input input:focus {
+  border: 0;
+  box-shadow: none;
+}
+
+.add-transaction__error {
+  margin: -5px 0 0;
+  padding: 10px 12px;
+  color: #b42318;
+  background: #fff0ed;
+  border-radius: 8px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.add-transaction__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 2px;
+}
+
+.add-transaction__submit,
+.add-transaction__cancel {
+  width: 100%;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border-radius: 9px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 160ms ease;
+}
+
+.add-transaction__submit {
+  color: #ffffff;
+  background: #087f6e;
+  border: 1px solid #087f6e;
+}
+
+.add-transaction__submit:hover {
+  background: #066b5d;
+}
+
+.add-transaction__cancel {
+  color: #586779;
+  background: #ffffff;
+  border: 1px solid #e2e8ed;
+}
+
+.add-transaction__cancel:hover {
+  background: #f5f7f9;
+}
+
+@media (max-width: 768px) {
+  .add-transaction-panel {
+    padding: 19px;
+  }
+
+  .add-transaction__form {
+    gap: 16px;
+  }
+
+  .add-transaction__actions {
+    flex-direction: row;
+  }
+
+  .add-transaction__actions > button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-transaction-panel {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .add-transaction__actions {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .add-transaction__type-button,
+  .add-transaction__field input,
+  .add-transaction__field select,
+  .add-transaction__submit,
+  .add-transaction__cancel {
+    transition: none;
+  }
+}

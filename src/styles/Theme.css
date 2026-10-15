@@ -1,0 +1,536 @@
+
+/* FINBRO Global Dark Theme
+   Activated by: <html data-theme="dark">
+*/
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  color: #e5edf4;
+  background: #0d151c;
+}
+
+html[data-theme="dark"] body {
+  color: #e5edf4;
+  background: #0d151c;
+}
+
+html[data-theme="dark"] .dashboard {
+  color: #e5edf4;
+  background: #0d151c;
+}
+
+html[data-theme="dark"] .dashboard__main {
+  background: #0d151c;
+}
+
+/* Main surfaces */
+
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .navbar,
+html[data-theme="dark"] .summary-card,
+html[data-theme="dark"] .dashboard-panel,
+html[data-theme="dark"] .recent-transactions,
+html[data-theme="dark"] .add-transaction-panel,
+html[data-theme="dark"] .transactions-list-panel,
+html[data-theme="dark"] .transactions-page__count,
+html[data-theme="dark"] .budgets-stat,
+html[data-theme="dark"] .budgets-form-panel,
+html[data-theme="dark"] .budgets-list-panel,
+html[data-theme="dark"] .budget-card,
+html[data-theme="dark"] .budget-overview,
+html[data-theme="dark"] .settings-card {
+  color: #e5edf4;
+  background: #131e28;
+  border-color: #2a3947;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* General text */
+
+html[data-theme="dark"] .sidebar__brand-text h2,
+html[data-theme="dark"] .navbar__heading h1,
+html[data-theme="dark"] .dashboard__welcome h2,
+html[data-theme="dark"] .summary-card__amount,
+html[data-theme="dark"] .dashboard-panel__header h3,
+html[data-theme="dark"] .recent-transactions__header h3,
+html[data-theme="dark"] .transactions-list-panel__header h3,
+html[data-theme="dark"] .budgets-list-panel__header h3,
+html[data-theme="dark"] .budgets-form-panel__heading h3,
+html[data-theme="dark"] .budgets-stat > strong,
+html[data-theme="dark"] .budget-card__category h4,
+html[data-theme="dark"] .budget-card__amount-row strong,
+html[data-theme="dark"] .budget-overview__heading h3,
+html[data-theme="dark"] .budget-overview__summary strong,
+html[data-theme="dark"] .budget-overview__category,
+html[data-theme="dark"] .budget-overview__amounts,
+html[data-theme="dark"] .settings-card__heading h3,
+html[data-theme="dark"] .settings-info-row strong,
+html[data-theme="dark"] .settings-theme-option__label,
+html[data-theme="dark"] .recent-transactions__name,
+html[data-theme="dark"] .transactions-table__name strong,
+html[data-theme="dark"] .transactions-table__empty h4,
+html[data-theme="dark"] .recent-transactions__empty h4,
+html[data-theme="dark"] .dashboard-empty-chart h4,
+html[data-theme="dark"] .dashboard-empty-breakdown h4,
+html[data-theme="dark"] .dashboard-transactions__empty h4,
+html[data-theme="dark"] .expense-breakdown__empty h4,
+html[data-theme="dark"] .budgets-list__empty h4 {
+  color: #e5edf4;
+}
+
+/* Muted supporting text */
+
+html[data-theme="dark"] .sidebar__brand-text span,
+html[data-theme="dark"] .sidebar__section-label,
+html[data-theme="dark"] .navbar__heading p,
+html[data-theme="dark"] .dashboard__welcome p,
+html[data-theme="dark"] .summary-card__title,
+html[data-theme="dark"] .summary-card__description,
+html[data-theme="dark"] .dashboard-panel__header p,
+html[data-theme="dark"] .dashboard__footer,
+html[data-theme="dark"] .dashboard__footer span:first-child,
+html[data-theme="dark"] .recent-transactions__header p,
+html[data-theme="dark"] .transactions-list-panel__header p,
+html[data-theme="dark"] .recent-transactions__type,
+html[data-theme="dark"] .recent-transactions__date,
+html[data-theme="dark"] .dashboard-empty-chart p,
+html[data-theme="dark"] .dashboard-empty-breakdown p,
+html[data-theme="dark"] .dashboard-transactions__empty p,
+html[data-theme="dark"] .expense-breakdown__empty p,
+html[data-theme="dark"] .expense-breakdown__name,
+html[data-theme="dark"] .expense-breakdown__category-values > span,
+html[data-theme="dark"] .expense-breakdown__center span,
+html[data-theme="dark"] .transactions-page__count span,
+html[data-theme="dark"] .transactions-table__name > div > span,
+html[data-theme="dark"] .transactions-table__date,
+html[data-theme="dark"] .budgets-form-panel__heading p,
+html[data-theme="dark"] .budgets-list-panel__header p,
+html[data-theme="dark"] .budgets-stat > span,
+html[data-theme="dark"] .budgets-stat > p,
+html[data-theme="dark"] .budget-card__category > div > span,
+html[data-theme="dark"] .budget-card__amount-row span,
+html[data-theme="dark"] .budget-overview__heading p,
+html[data-theme="dark"] .budget-overview__summary span,
+html[data-theme="dark"] .budget-overview__amounts > span,
+html[data-theme="dark"] .budget-overview__item-bottom,
+html[data-theme="dark"] .budget-overview__empty p,
+html[data-theme="dark"] .settings-card__heading p,
+html[data-theme="dark"] .settings-theme-option__description,
+html[data-theme="dark"] .settings-info-row p,
+html[data-theme="dark"] .settings-card__footnote {
+  color: #9baaba;
+}
+
+/* Sidebar */
+
+html[data-theme="dark"] .sidebar {
+  border-right-color: #2a3947;
+}
+
+html[data-theme="dark"] .sidebar__link {
+  color: #aab8c6;
+}
+
+html[data-theme="dark"] .sidebar__link:hover {
+  color: #77cfb8;
+  background: #1d302f;
+}
+
+html[data-theme="dark"] .sidebar__link--active,
+html[data-theme="dark"] .sidebar__link--active:hover {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .sidebar__tip {
+  background: #182a2c;
+  border-color: #2b4744;
+}
+
+html[data-theme="dark"] .sidebar__tip h3 {
+  color: #dcefe9;
+}
+
+html[data-theme="dark"] .sidebar__tip p {
+  color: #a1b8b0;
+}
+
+html[data-theme="dark"] .sidebar__tip-icon {
+  color: #80ddc4;
+  background: #244440;
+}
+
+html[data-theme="dark"] .sidebar__close {
+  color: #aab8c6;
+}
+
+/* Navbar */
+
+html[data-theme="dark"] .navbar {
+  border-bottom-color: #2a3947;
+}
+
+html[data-theme="dark"] .navbar__date {
+  color: #bdc9d4;
+  background: #18242e;
+  border-color: #31414f;
+}
+
+html[data-theme="dark"] .navbar__menu-button {
+  color: #d6e0e8;
+  background: #18242e;
+  border-color: #31414f;
+}
+
+html[data-theme="dark"] .navbar__menu-button:hover {
+  color: #80ddc4;
+  background: #1e302f;
+}
+
+/* Dashboard and chart panels */
+
+html[data-theme="dark"] .summary-card__icon,
+html[data-theme="dark"] .summary-card--balance .summary-card__icon,
+html[data-theme="dark"] .summary-card--income .summary-card__icon {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .summary-card--expense .summary-card__icon {
+  color: #f0a184;
+  background: #3b2925;
+}
+
+html[data-theme="dark"] .dashboard-panel__period {
+  color: #c1ccd6;
+  background: #1a2732;
+  border-color: #31414f;
+}
+
+html[data-theme="dark"] .dashboard-empty-chart__icon,
+html[data-theme="dark"] .dashboard-empty-breakdown__icon,
+html[data-theme="dark"] .dashboard-transactions__empty > div,
+html[data-theme="dark"] .recent-transactions__empty-icon,
+html[data-theme="dark"] .expense-breakdown__empty-icon,
+html[data-theme="dark"] .spending-chart__empty-icon,
+html[data-theme="dark"] .transactions-table__empty-icon {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+/* Chart text drawn by Chart.js remains legible against dark panels. */
+
+html[data-theme="dark"] .spending-chart__canvas {
+  color: #aab8c6;
+}
+
+/* Transaction table surfaces */
+
+html[data-theme="dark"] .recent-transactions__table th,
+html[data-theme="dark"] .transactions-table th,
+html[data-theme="dark"] .transactions-filters__field select,
+html[data-theme="dark"] .transactions-filters__field input,
+html[data-theme="dark"] .transactions-filters__search {
+  color: #cbd6df;
+  background: #192631;
+  border-color: #31414f;
+}
+
+html[data-theme="dark"] .recent-transactions__table td,
+html[data-theme="dark"] .transactions-table td {
+  color: #bdc8d2;
+  border-bottom-color: #263541;
+}
+
+html[data-theme="dark"] .recent-transactions__table tbody tr:hover,
+html[data-theme="dark"] .transactions-table tbody tr:hover {
+  background: #192631;
+}
+
+html[data-theme="dark"] .recent-transactions__category,
+html[data-theme="dark"] .transactions-table__category {
+  color: #c1ccd6;
+  background: #25323e;
+}
+
+html[data-theme="dark"] .recent-transactions__amount--income,
+html[data-theme="dark"] .transactions-table__amount--income {
+  color: #76d6ae !important;
+}
+
+html[data-theme="dark"] .recent-transactions__amount--expense,
+html[data-theme="dark"] .transactions-table__amount--expense {
+  color: #f0a184 !important;
+}
+
+html[data-theme="dark"] .recent-transactions__type-icon--income,
+html[data-theme="dark"] .transactions-table__type-icon--income {
+  color: #76d6ae;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .recent-transactions__type-icon--expense,
+html[data-theme="dark"] .transactions-table__type-icon--expense {
+  color: #f0a184;
+  background: #3b2925;
+}
+
+html[data-theme="dark"] .transactions-table__action--edit {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .transactions-table__action--edit:hover {
+  background: #244740;
+}
+
+html[data-theme="dark"] .transactions-table__action--delete {
+  color: #f0a184;
+  background: #3b2925;
+}
+
+html[data-theme="dark"] .transactions-table__action--delete:hover {
+  background: #52352e;
+}
+
+/* Forms */
+
+html[data-theme="dark"] .add-transaction__field label,
+html[data-theme="dark"] .transactions-filters__field label,
+html[data-theme="dark"] .transactions-table__name strong,
+html[data-theme="dark"] .settings-info-row strong {
+  color: #d5dfe7;
+}
+
+html[data-theme="dark"] .add-transaction__field input,
+html[data-theme="dark"] .add-transaction__field select,
+html[data-theme="dark"] .transactions-filters__field input,
+html[data-theme="dark"] .transactions-filters__field select,
+html[data-theme="dark"] .budgets-page__month input,
+html[data-theme="dark"] .budgets-form__field select,
+html[data-theme="dark"] .settings-page input,
+html[data-theme="dark"] .settings-page select {
+  color: #e0e8ef;
+  background: #101a23;
+  border-color: #354552;
+}
+
+html[data-theme="dark"] .add-transaction__field input::placeholder,
+html[data-theme="dark"] .transactions-filters__search input::placeholder {
+  color: #8798a8;
+}
+
+html[data-theme="dark"] .add-transaction__amount-input,
+html[data-theme="dark"] .budgets-form__amount {
+  background: #101a23;
+  border-color: #354552;
+}
+
+html[data-theme="dark"] .add-transaction__amount-input > span,
+html[data-theme="dark"] .budgets-form__amount > span {
+  color: #c2ced8;
+  background: #1c2934;
+  border-right-color: #354552;
+}
+
+html[data-theme="dark"] .add-transaction__type-button {
+  color: #bdc9d4;
+  background: #17232d;
+  border-color: #354552;
+}
+
+html[data-theme="dark"] .add-transaction__type-button--active-expense {
+  color: #f0a184;
+  background: #3b2925;
+  border-color: #75473a;
+}
+
+html[data-theme="dark"] .add-transaction__type-button--active-income {
+  color: #80ddc4;
+  background: #1c3935;
+  border-color: #35665b;
+}
+
+html[data-theme="dark"] .add-transaction__cancel,
+html[data-theme="dark"] .budgets-form__cancel {
+  color: #c7d2dc;
+  background: #1b2833;
+  border-color: #354552;
+}
+
+html[data-theme="dark"] .add-transaction__cancel:hover,
+html[data-theme="dark"] .budgets-form__cancel:hover {
+  background: #263541;
+}
+
+html[data-theme="dark"] .add-transaction__error,
+html[data-theme="dark"] .budgets-form__error {
+  color: #ffb6a7;
+  background: #402720;
+}
+
+/* Shared action links */
+
+html[data-theme="dark"] .dashboard-panel__view-all,
+html[data-theme="dark"] .recent-transactions__view-all,
+html[data-theme="dark"] .recent-transactions__empty-link,
+html[data-theme="dark"] .transactions-filters__reset,
+html[data-theme="dark"] .transactions-table__empty button {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .dashboard-panel__view-all:hover,
+html[data-theme="dark"] .recent-transactions__view-all:hover,
+html[data-theme="dark"] .recent-transactions__empty-link:hover,
+html[data-theme="dark"] .transactions-filters__reset:hover,
+html[data-theme="dark"] .transactions-table__empty button:hover {
+  background: #244740;
+}
+
+/* Monthly budgets */
+
+html[data-theme="dark"] .budgets-stat__icon--planned,
+html[data-theme="dark"] .budgets-stat__icon--remaining {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .budgets-stat__icon--spent {
+  color: #aab6ff;
+  background: #292f4b;
+}
+
+html[data-theme="dark"] .budgets-stat__icon--over,
+html[data-theme="dark"] .budgets-stat__icon--unbudgeted {
+  color: #f0c26e;
+  background: #3b3020;
+}
+
+html[data-theme="dark"] .budgets-form-panel__icon,
+html[data-theme="dark"] .budget-card__icon {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .budgets-form-panel__tip {
+  background: #182a2c;
+  border-color: #2b4744;
+}
+
+html[data-theme="dark"] .budgets-form-panel__tip p {
+  color: #b0c4bc;
+}
+
+html[data-theme="dark"] .budget-card__track,
+html[data-theme="dark"] .budget-overview__track {
+  background: #283642;
+}
+
+html[data-theme="dark"] .budget-overview__summary > div {
+  background: #192631;
+  border-color: #2d3d4a;
+}
+
+html[data-theme="dark"] .budget-overview__icon {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .budget-overview__view-all,
+html[data-theme="dark"] .budget-overview__create {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .budget-overview__view-all:hover,
+html[data-theme="dark"] .budget-overview__create:hover {
+  background: #244740;
+}
+
+html[data-theme="dark"] .budgets-page__notice {
+  color: #9ce4ce;
+  background: #17312c;
+  border-color: #285046;
+}
+
+html[data-theme="dark"] .budgets-page__over-text,
+html[data-theme="dark"] .budget-overview__negative {
+  color: #ff9f91 !important;
+}
+
+/* Settings page */
+
+html[data-theme="dark"] .settings-card__icon {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .settings-theme-option {
+  color: #d5dfe7;
+  background: #17232d;
+  border-color: #354552;
+}
+
+html[data-theme="dark"] .settings-theme-option:hover {
+  border-color: #568f82;
+}
+
+html[data-theme="dark"] .settings-theme-option--active {
+  background: #192e2d;
+  border-color: #4da994;
+  box-shadow: 0 0 0 2px rgba(77, 169, 148, 0.12);
+}
+
+html[data-theme="dark"] .settings-info-row {
+  border-bottom-color: #2a3947;
+}
+
+html[data-theme="dark"] .settings-info-value {
+  color: #80ddc4;
+  background: #1c3935;
+  border-color: #31584f;
+}
+
+html[data-theme="dark"] .settings-storage-status {
+  color: #80ddc4;
+}
+
+html[data-theme="dark"] .settings-storage-status--unavailable {
+  color: #f0c26e;
+  background: #3b3020;
+}
+
+html[data-theme="dark"] .settings-card__footnote svg {
+  color: #80ddc4;
+}
+
+/* Shared footer */
+
+html[data-theme="dark"] .dashboard__footer {
+  color: #8999a8;
+}
+
+html[data-theme="dark"] .dashboard__footer span:first-child {
+  color: #b4c2cd;
+}
+
+/* Better contrast for keyboard focus and reduced motion support */
+
+html[data-theme="dark"] button:focus-visible,
+html[data-theme="dark"] a:focus-visible,
+html[data-theme="dark"] input:focus-visible,
+html[data-theme="dark"] select:focus-visible {
+  outline-color: #80ddc4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="dark"] *,
+  html[data-theme="dark"] *::before,
+  html[data-theme="dark"] *::after {
+    scroll-behavior: auto;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

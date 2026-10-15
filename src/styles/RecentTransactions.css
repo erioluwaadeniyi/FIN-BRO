@@ -1,0 +1,308 @@
+
+/* FINBRO Recent Transactions */
+
+.recent-transactions,
+.recent-transactions * {
+  box-sizing: border-box;
+}
+
+.recent-transactions {
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 24px;
+  padding: 23px;
+  background: #ffffff;
+  border: 1px solid #e8edf2;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(26, 43, 63, 0.025);
+}
+
+.recent-transactions__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.recent-transactions__header h3 {
+  margin: 0;
+  color: #233346;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.recent-transactions__header p {
+  margin: 7px 0 0;
+  color: #97a1ad;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.recent-transactions__view-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-shrink: 0;
+  padding: 8px 10px;
+  color: #087f6e;
+  background: #eff8f5;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  transition: background 160ms ease;
+}
+
+.recent-transactions__view-all:hover,
+.recent-transactions__empty-link:hover {
+  background: #e0f1eb;
+}
+
+.recent-transactions__view-all:focus-visible,
+.recent-transactions__empty-link:focus-visible {
+  outline: 2px solid #087f6e;
+  outline-offset: 3px;
+}
+
+/* Table */
+
+.recent-transactions__table-wrap {
+  width: 100%;
+  margin-top: 23px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+
+.recent-transactions__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.recent-transactions__table th {
+  padding: 14px 12px;
+  color: #8d99a6;
+  background: #f8fafb;
+  border-top: 1px solid #edf0f3;
+  border-bottom: 1px solid #edf0f3;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.recent-transactions__table th:first-child {
+  padding-left: 16px;
+  border-radius: 8px 0 0 8px;
+}
+
+.recent-transactions__table th:last-child {
+  padding-right: 16px;
+  text-align: right;
+  border-radius: 0 8px 8px 0;
+}
+
+.recent-transactions__table td {
+  padding: 14px 12px;
+  color: #647284;
+  border-bottom: 1px solid #f0f3f5;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.recent-transactions__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.recent-transactions__table tbody tr:hover:not(:first-child) {
+  background: #fbfcfd;
+}
+
+/* Transaction name and type */
+
+.recent-transactions__name-cell {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 155px;
+}
+
+.recent-transactions__type-icon {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 11px;
+}
+
+.recent-transactions__type-icon--income {
+  color: #218b68;
+  background: #e9f7ef;
+}
+
+.recent-transactions__type-icon--expense {
+  color: #d77954;
+  background: #fff0e9;
+}
+
+.recent-transactions__name-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.recent-transactions__name {
+  color: #263649;
+  font-size: 11px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.recent-transactions__type {
+  color: #99a3af;
+  font-size: 10px;
+}
+
+.recent-transactions__category {
+  display: inline-block;
+  padding: 6px 9px;
+  color: #667586;
+  background: #f5f7f9;
+  border-radius: 6px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.recent-transactions__date {
+  white-space: nowrap;
+}
+
+.recent-transactions__amount {
+  text-align: right;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.recent-transactions__amount--income {
+  color: #218b68 !important;
+}
+
+.recent-transactions__amount--expense {
+  color: #d77954 !important;
+}
+
+/* Empty state */
+
+.recent-transactions__empty {
+  min-height: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.recent-transactions__empty-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
+  color: #087f6e;
+  background: #edf7f4;
+  border-radius: 14px;
+}
+
+.recent-transactions__empty h4 {
+  margin: 0;
+  color: #344454;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.recent-transactions__empty p {
+  max-width: 310px;
+  margin: 8px 0 15px;
+  color: #98a3af;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.recent-transactions__empty-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 12px;
+  color: #087f6e;
+  background: #eff8f5;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+  .recent-transactions {
+    padding: 19px;
+  }
+
+  .recent-transactions__table {
+    min-width: 590px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .recent-transactions {
+    margin-bottom: 20px;
+    padding: 18px;
+  }
+
+  .recent-transactions__table-wrap {
+    margin-top: 18px;
+  }
+
+  .recent-transactions__empty {
+    min-height: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recent-transactions {
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .recent-transactions__header h3 {
+    font-size: 13px;
+  }
+
+  .recent-transactions__header p {
+    font-size: 10px;
+  }
+
+  .recent-transactions__view-all {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .recent-transactions__table {
+    min-width: 570px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .recent-transactions__view-all {
+    transition: none;
+  }
+}

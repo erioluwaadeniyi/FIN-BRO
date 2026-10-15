@@ -1,0 +1,182 @@
+
+/* FINBRO Navbar */
+
+.navbar,
+.navbar * {
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 32px;
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf2;
+  font-family: inherit;
+}
+
+.navbar__left {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar__heading {
+  min-width: 0;
+}
+
+.navbar__heading h1 {
+  margin: 0;
+  color: #172536;
+  font-size: 24px;
+  font-weight: 750;
+  letter-spacing: -0.7px;
+  line-height: 1.3;
+}
+
+.navbar__heading p {
+  margin: 6px 0 0;
+  color: #84909e;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.navbar__date {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 13px;
+  color: #627080;
+  background: #f8fafb;
+  border: 1px solid #e9eef2;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+.navbar__date svg {
+  color: #087f6e;
+  flex-shrink: 0;
+}
+
+/* Hidden on desktop */
+
+.navbar__menu-button {
+  display: none;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #344454;
+  background: #ffffff;
+  border: 1px solid #e8edf2;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navbar__menu-button:hover {
+  color: #087f6e;
+  background: #f3f8f7;
+}
+
+.navbar__menu-button:focus-visible {
+  outline: 2px solid #087f6e;
+  outline-offset: 3px;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 82px;
+    padding: 17px 20px;
+    gap: 12px;
+  }
+
+  .navbar__menu-button {
+    display: flex;
+  }
+
+  .navbar__heading h1 {
+    font-size: 20px;
+    letter-spacing: -0.4px;
+  }
+
+  .navbar__heading p {
+    max-width: 240px;
+    margin-top: 4px;
+    font-size: 11px;
+  }
+
+  .navbar__date {
+    min-height: 38px;
+    gap: 7px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    min-height: 76px;
+    padding: 14px 13px;
+    gap: 8px;
+  }
+
+  .navbar__left {
+    gap: 10px;
+  }
+
+  .navbar__menu-button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .navbar__heading h1 {
+    font-size: 18px;
+  }
+
+  .navbar__heading p {
+    max-width: 170px;
+    font-size: 10px;
+  }
+
+  .navbar__date {
+    width: 38px;
+    height: 38px;
+    min-height: 38px;
+    padding: 0;
+  }
+
+  .navbar__date span {
+    display: none;
+  }
+
+  .navbar__date svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar__menu-button {
+    transition: none;
+  }
+}

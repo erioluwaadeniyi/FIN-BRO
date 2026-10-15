@@ -1,0 +1,137 @@
+
+/* FINBRO Simple Settings */
+
+.settings-page,
+.settings-page * {
+  box-sizing: border-box;
+}
+
+.settings-page .dashboard__content {
+  max-width: 1100px;
+}
+
+.settings-page .dashboard__welcome {
+  margin-bottom: 25px;
+}
+
+.settings-page .dashboard__welcome h2 {
+  margin: 0;
+}
+
+.settings-card {
+  width: 100%;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e8edf2;
+  border-radius: 13px;
+}
+
+.settings-theme-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.settings-theme-icon {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #087f6e;
+  background: #e8f5f1;
+  border-radius: 11px;
+}
+
+.settings-theme-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.settings-theme-info h3 {
+  margin: 0;
+  color: #233346;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.settings-theme-info p {
+  margin: 5px 0 0;
+  color: #8995a3;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Theme toggle */
+
+.settings-switch {
+  width: 48px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 3px;
+  background: #cbd2da;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 180ms ease;
+}
+
+.settings-switch--on {
+  justify-content: flex-end;
+  background: #087f6e;
+}
+
+.settings-switch__thumb {
+  width: 21px;
+  height: 21px;
+  display: block;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.settings-switch:focus-visible {
+  outline: 2px solid #087f6e;
+  outline-offset: 4px;
+}
+
+html[data-theme="dark"] .settings-card {
+  background: #131e28;
+  border-color: #2a3947;
+}
+
+html[data-theme="dark"] .settings-theme-icon {
+  color: #80ddc4;
+  background: #1c3935;
+}
+
+html[data-theme="dark"] .settings-theme-info h3 {
+  color: #e5edf4;
+}
+
+html[data-theme="dark"] .settings-theme-info p {
+  color: #9baaba;
+}
+
+html[data-theme="dark"] .settings-switch:not(.settings-switch--on) {
+  background: #475563;
+}
+
+@media (max-width: 480px) {
+  .settings-card {
+    padding: 17px;
+  }
+
+  .settings-theme-row {
+    gap: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .settings-switch {
+    transition: none;
+  }
+}
